@@ -1,0 +1,64 @@
+.day {
+    flex: 1;
+    border-right: 1px solid #ccc;
+    transition: background 0.15s ease-in-out;    
+    cursor: pointer;
+
+    &:hover {
+        background: #a9bfe6;
+
+        color: #fff;
+        
+        .high-temperature {
+            color: rgb(223, 84, 84);
+        }
+
+        .low-temperature {
+            color: rgb(86, 83, 231);
+        }
+    }
+
+    &:last-child {
+        border-right: none;
+    }
+
+    .high-temperature {
+        font-size: 3.2rem;        
+    }
+
+    .low-temperature {
+        font-size: 2.8rem;
+        color: #355A9B;
+        font-weight: 400;
+    }
+
+    .day-name, .chancePrecip {
+        font-weight: 300;
+    }
+}
+
+.detail {
+    .day {
+        .high-temperature {
+            font-size: 5.2rem;        
+        }
+    
+        .low-temperature {
+            font-size: 4.2rem;
+        }
+    
+    }
+
+    .day-name {
+        font-size: 6.2rem;
+        font-weight: 700;
+    }
+
+    .day-date {
+        font-size: 5.2rem;
+    }
+
+    .chancePrecip {
+        font-size: 4rem;
+    }
+}
